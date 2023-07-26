@@ -7,11 +7,27 @@
  */
 int main(void)
 {
-	int a, b;
+	int count;
 
-	a = _printf("Hi %s %c 0%%\n", "john", 'A');
-	b = printf("Hi %s %c 0%%\n", "john", 'A');
-	printf("chars printed is %d\n %d\n", a, b);
+	count =  _printf("%s", "JAMES dong\n");
+	printf("Number of characters printed: %d\n", count);
+	count =  printf("%s", "JAMES dong\n");
+	 printf("Number of characters printed: %d\n", count);
+	count =  _printf("%c\t%c\n", 'A', 'e');
+	 printf("Number of characters printed: %d\n", count);
+	count = printf("%c\t%c\n", 'A', 'e');
+	printf("Number of characters printed: %d\n", count);
+	count = _printf("am strengthened by all means BOOM!\n");
+	printf("Number of characters printed: %d\n", count);
+	count = printf("am strengthened by all means BOOM!\n");
+	printf("Number of characters printed: %d\n", count);
+	count = _printf("100%% dogs\n");
+	printf("Number of characters printed: %d\n", count);
+	count = printf("100%% dogs\n");
+	printf("Number of characters printed: %d\n", count);
+	count =  _printf("%s", "JAMES dong i like your mother\n");
+	printf("Number of characters printed: %d\n", count);
+	count =  printf("%s", "JAMES dong i like your mother\n");
+	printf("Number of characters printed: %d\n", count);
 	return (0);
 }
-

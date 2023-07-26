@@ -9,43 +9,41 @@ int _printf(const char *format, ...)
 	int count;
 	va_list ap;
 
-	va_start(ap, format);
 	if (format == NULL)
 	{
 		return (-1);
 	}
+	va_start(ap, format);
 	count = 0;
 	while (*format)
 	{
-		if (*format == '%')
-		{
-			format++;
-			count++;
-		}
-		if (*format == '%')
-		{
-			print_chr('%');
-			count++;
-		}
-		else if (*format == 'c')
-		{
-			print_chr(va_arg(ap, int));
-			count++;
-		}
-		else if (*format == 's')
-		{
-			print_str(va_arg(ap, char *));
-			count++;
-		}
-		else
+		if (*format != '%')
 		{
 			write(1, format, 1);
 			count++;
 		}
+		else
+		{
+			format++;
+			if (*format == '\0')
+				break;
+			else if (*format == '%')
+			{
+				print_chr('%');
+				count++;
+			}
+			else if (*format == 'c')
+			{
+				print_chr(va_arg(ap, int));
+				count++;
+			}
+			else if (*format == 's')
+			{
+				count += print_str(va_arg(ap, char*));
+			}
+		}
 		format++;
 	}
-	return (count);
 	va_end(ap);
+	return (count);
 }
-
-

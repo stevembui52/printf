@@ -40,6 +40,9 @@ int _printf(const char *format, ...)
 			else if (*format == 's')
 			{
 				count += print_str(va_arg(ap, char*));
+			}else if (*format =='i' || *format == 'd')
+			{
+				count += va_arg(ap, int);
 			}
 		}
 		format++;

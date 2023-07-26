@@ -29,5 +29,9 @@ int main(void)
 	printf("Number of characters printed: %d\n", count);
 	count =  printf("%s", "JAMES dong i like your mother\n");
 	printf("Number of characters printed: %d\n", count);
+	_printf("hello your age %d and year %i\n", -33, -1990);
+	printf("Number of characters printed: %d\n", count);
+	printf("hello your age %d and year %i\n", 33, 1990);
+	 printf("Number of characters printed: %d\n", count);
 	return (0);
 }

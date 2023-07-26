@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * main - entry point
  *
@@ -6,10 +7,11 @@
  */
 int main(void)
 {
-	char str[] = "john walker";
-	char c = 'P';
+	int a, b;
 
-	_printf("hello %s I love %c 100 %%\n", str, c);
+	a = _printf("Hi %s %c 0%%\n", "john", 'A');
+	b = printf("Hi %s %c 0%%\n", "john", 'A');
+	printf("chars printed is %d\n %d\n", a, b);
 	return (0);
 }
 

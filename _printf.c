@@ -28,22 +28,16 @@ int _printf(const char *format, ...)
 			if (*format == '\0')
 				break;
 			else if (*format == '%')
-			{
-				print_chr('%');
-				count++;
-			}
+			count += print_chr('%');
 			else if (*format == 'c')
 			{
-				print_chr(va_arg(ap, int));
-				count++;
+				count += print_chr(va_arg(ap, int));
 			}
 			else if (*format == 's')
 			{
 				count += print_str(va_arg(ap, char*));
-			}else if (*format =='i' || *format == 'd')
-			{
-				count += va_arg(ap, int);
-			}
+			} else if (*format == 'i' || *format == 'd')
+				count += print_int((long)va_arg(ap, int));
 		}
 		format++;
 	}

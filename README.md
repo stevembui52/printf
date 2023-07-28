@@ -1,4 +1,4 @@
-The printf project is a collaboration project by ** Stephen Mbui** and ** Muigai Benson wanjiku**, students of the ALX Software Engineering Programme by Holberton School, in which a function named "_printf" imitates the actual "printf" command located in the stdio.h library. It contains some of the basic features and functions found in the manual 3 of "printf"
+The printf project is a collaboration project by ** Stephen Mbui** and ** Muigai Benson wanjiku**, students of the ALX Software Engineering Programme by Holberton School, in which a function named "_printf" imitates the actual "printf" command located in the stdio.h library. It contains some of the basic features and functions found in the manual 3 of "printf" 0. I'm not going anywhere. You can print that wherever you want to. I'm here and I'm a Spur for life
 
 _printf() is a function that performs formatted output conversion and prints data. Its prototype is the following:
 

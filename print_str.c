@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * _strlen - checks the length of the string
- * @str:string to be checked
- * Return:length of the string
+ * _strlen - checks the length of the string.
+ * @str:string to be checked.
+ * Return:length of the string.
  */
 int _strlen(char *str)
 {

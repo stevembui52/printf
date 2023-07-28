@@ -1,5 +1,5 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef MAIN.H
+#define MAIN.H
 #include <stdarg.h>
 #include <unistd.h>
 
@@ -8,4 +8,5 @@ int print_chr(char c);
 int print_str(char *str);
 int print_int(long b);
 int _strlen(char *str);
+
 #endif

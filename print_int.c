@@ -8,15 +8,15 @@
 int print_int(long b)
 {
 	int count = 0;
-	char *symbols = "0123456789"
+	char *symbols = "0123456789";
 		if (b < 0)
 		{
-			write(1, "-" 1);
+			write(1, "-", 1);
 			return (print_int(-b) + 1);
 		}
 		else if (b < 10)
 		{
-		return (print_char(symbols[b]));
+			return (print_chr(symbols[b]));
 		}
 		else
 		{

@@ -32,6 +32,7 @@ int main(void)
 	_printf("hello your age %d and year %i\n", 33, 1990);
 	printf("Number of characters printed: %d\n", count);
 	printf("hello your age %d and year %i\n", 33, 1990);
-	 printf("Number of characters printed: %d\n", count);
+	printf("Number of characters printed: %d\n", count);
+	_printf("%b\n", 98);
 	return (0);
 }

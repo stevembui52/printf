@@ -38,6 +38,8 @@ int _printf(const char *format, ...)
 				count += print_str(va_arg(ap, char*));
 			} else if (*format == 'i' || *format == 'd')
 				count += print_int((long)va_arg(ap, int));
+			else if (*format == 'b')
+				count += print_bnr((long)va_arg(ap, int));
 		}
 		format++;
 	}

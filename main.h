@@ -8,5 +8,5 @@ int print_chr(char c);
 int print_str(char *str);
 int print_int(long b);
 int _strlen(char *str);
-
+int print_bnr(int n);
 #endif
